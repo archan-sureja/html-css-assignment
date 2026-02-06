@@ -1,0 +1,94 @@
+/*main nav styling*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(30,110,230);
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+/* container-1 styling of nav*/
+#nav-container-1{
+    display: flex;
+
+}
+#nav-container-1 div{
+    display: flex;
+    height: 60px;
+    box-sizing: border-box;
+    align-items: center;
+    margin-left: 10px;
+}
+#nav-container-1 input {
+  width: 500px;
+  border: none;
+  height: 40px;
+  box-sizing: border-box;
+}
+#nav-container-1 input:focus{
+    outline: none;
+}
+@media (max-width: 700px){
+    #nav-container-1{
+        flex-direction: column;
+    }
+    #nav-container-1 input {
+        width: 90%;
+    }
+    #nav-container-1 input::placeholder{
+        line-break: auto;
+    }
+}
+
+#search-img{
+    height: 40px;
+    width: 40px;
+}
+
+
+/*container-2 styling of nav*/
+#nav-container-2{
+    display: flex;
+    align-items: center;
+    width: 400px;
+  justify-content: space-evenly;
+}
+#nav-container-2 div {
+  height: 40px;
+  box-sizing: border-box;
+  display: flex;
+}
+@media (max-width:400px){
+    #nav-container-2{
+        flex-direction: column;
+    }
+}
+#login-button{
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+    font-size: medium;
+    border:none;
+}
+#more-option {
+    height: 40px;
+    background-color:rgb(30,110,230) ;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+}
+#cart-img {
+    height: 40px;
+}
+#cart-button{
+    height: 4opx;
+    background-color: rgb(30,110,230);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    border:none;
+}
+
