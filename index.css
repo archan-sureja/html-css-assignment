@@ -1,3 +1,7 @@
+* {
+    margin:0px;
+    padding: 0px;
+}
 /*main nav styling*/
 nav {
     display: flex;
@@ -92,3 +96,80 @@ nav {
     border:none;
 }
 
+/* category container*/
+#category-container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#category-container select{
+    background-color: white;
+    border: none;
+    font-size: large;
+}
+
+/*product container*/
+#product-container{
+    display: grid;
+    width: 90%;
+    margin:auto;
+    margin-top:30px;
+    grid-template-areas: 
+    "deals ads"
+    "product product";
+    grid-template-columns: 7fr 1.1fr;
+    gap: 30px;
+    background-color:rgb(238, 237, 237);;
+    /* overflow: auto; */
+}
+@media (max-width:1024px){
+    #product-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.deals {
+    grid-area: deals;
+    background-color: white;
+}
+.ads {
+    grid-area: ads;
+}
+.product {
+    grid-area: product;
+    background-color: white;
+}
+
+#product-container .header{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+#deals_of_day {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#book_and_instrument{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-image {
+    height: 200px; 
+    width: 200px; 
+    background-color: aquamarine;
+}
+.blue-button {
+    background-color: rgb(30,110,230);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin : 10px;
+}
+.header h5 {
+    font-size: large;
+}
