@@ -151,12 +151,14 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 10px;
 }
 
 #book_and_instrument{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 10px;
 }
 .product-image {
     height: 200px; 
@@ -172,4 +174,6 @@ nav {
 }
 .header h5 {
     font-size: large;
+    font-weight: bold;
+    
 }
