@@ -1,22 +1,20 @@
 * {
-    margin:0px;
+    margin: 0px;
     padding: 0px;
 }
 /*main nav styling*/
 nav {
     display: flex;
     justify-content: space-around;
-    background-color:rgb(30,110,230);
+    background-color: rgb(30, 110, 230);
     padding: 10px;
     flex-wrap: wrap;
 }
-
 /* container-1 styling of nav*/
-#nav-container-1{
+#nav-container-1 {
     display: flex;
-
 }
-#nav-container-1 div{
+#nav-container-1 div {
     display: flex;
     height: 60px;
     box-sizing: border-box;
@@ -24,61 +22,59 @@ nav {
     margin-left: 10px;
 }
 #nav-container-1 input {
-  width: 500px;
-  border: none;
-  height: 40px;
-  box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    box-sizing: border-box;
 }
-#nav-container-1 input:focus{
+#nav-container-1 input:focus {
     outline: none;
 }
-@media (max-width: 700px){
-    #nav-container-1{
+@media (max-width: 700px) {
+    #nav-container-1 {
         flex-direction: column;
     }
     #nav-container-1 input {
         width: 90%;
     }
-    #nav-container-1 input::placeholder{
+    #nav-container-1 input::placeholder {
         line-break: auto;
     }
 }
-
-#search-img{
+#search-img {
     height: 40px;
     width: 40px;
 }
-
-
 /*container-2 styling of nav*/
-#nav-container-2{
+#nav-container-2 {
     display: flex;
     align-items: center;
-    width: 400px;
-  justify-content: space-evenly;
+    width: auto;
+    gap: 10px;
+    justify-content: space-evenly;
 }
 #nav-container-2 div {
-  height: 40px;
-  box-sizing: border-box;
-  display: flex;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
 }
-@media (max-width:400px){
-    #nav-container-2{
+@media (max-width: 400px) {
+    #nav-container-2 {
         flex-direction: column;
     }
 }
-#login-button{
+#login-button {
     height: 40px;
     width: 150px;
     background-color: white;
     color: blue;
     font-weight: bold;
     font-size: medium;
-    border:none;
+    border: none;
 }
 #more-option {
     height: 40px;
-    background-color:rgb(30,110,230) ;
+    background-color: rgb(30, 110, 230);
     color: white;
     font-weight: bold;
     font-size: medium;
@@ -87,45 +83,43 @@ nav {
 #cart-img {
     height: 40px;
 }
-#cart-button{
+#cart-button {
     height: 4opx;
-    background-color: rgb(30,110,230);
+    background-color: rgb(30, 110, 230);
     color: white;
     font-weight: bold;
     font-size: medium;
-    border:none;
+    border: none;
 }
-
 /* category container*/
-#category-container{
+#category-container {
     display: flex;
     width: 80%;
     margin: auto;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-#category-container select{
+#category-container select {
     background-color: white;
     border: none;
     font-size: large;
 }
-
 /*product container*/
-#product-container{
+#product-container {
     display: grid;
     width: 90%;
-    margin:auto;
-    margin-top:30px;
-    grid-template-areas: 
-    "deals ads"
-    "product product";
+    margin: auto;
+    margin-top: 30px;
+    grid-template-areas:
+        "deals ads"
+        "product product";
     grid-template-columns: 7fr 1.1fr;
     gap: 30px;
-    background-color:rgb(238, 237, 237);;
+    background-color: rgb(238, 237, 237);
     /* overflow: auto; */
 }
-@media (max-width:1024px){
-    #product-container{
+@media (max-width: 1024px) {
+    #product-container {
         display: flex;
         flex-direction: column;
     }
@@ -141,39 +135,169 @@ nav {
     grid-area: product;
     background-color: white;
 }
-
-#product-container .header{
+#product-container .header {
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
 }
 #deals_of_day {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 15px;
     margin-top: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px;
+    scroll-behavior: smooth;
 }
 
-#book_and_instrument{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 10px;
+#deals_of_day::-webkit-scrollbar {
+    height: 8px;
 }
+
+#deals_of_day::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#deals_of_day::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+#deals_of_day::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#deals_of_day > div {
+    min-width: 150px;
+    flex-shrink: 0;
+}
+
+#book_and_instrument {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+#book_and_instrument::-webkit-scrollbar {
+    height: 8px;
+}
+
+#book_and_instrument::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#book_and_instrument::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+#book_and_instrument::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#book_and_instrument > div {
+    min-width: 150px;
+    flex-shrink: 0;
+}
+
 .product-image {
-    height: 200px; 
-    width: 200px; 
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+    aspect-ratio: 1/1;
     background-color: aquamarine;
 }
 .blue-button {
-    background-color: rgb(30,110,230);
+    background-color: rgb(30, 110, 230);
     color: white;
     border: none;
     padding: 10px;
-    margin : 10px;
+    margin: 10px;
 }
 .header h5 {
     font-size: large;
     font-weight: bold;
-    
+}
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #nav-container-1,
+    #nav-container-2 {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    #nav-container-2 {
+        flex-wrap: wrap;
+    }
+    #login-button {
+        width: 100%;
+    }
+}
+@media (max-width: 900px) {
+    .ads {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    #category-container {
+        width: 100%;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 15px;
+        padding: 10px;
+    }
+    #category-container > div {
+        min-width: 90px;
+        text-align: center;
+    }
+
+    #deals_of_day {
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 500px;
+        align-items: center;
+    }
+
+    #deals_of_day::-webkit-scrollbar {
+        width: 8px;
+        height: auto;
+    }
+
+    #deals_of_day > div {
+        min-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #book_and_instrument {
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 500px;
+        align-items: center;
+    }
+
+    #book_and_instrument::-webkit-scrollbar {
+        width: 8px;
+        height: auto;
+    }
+
+    #book_and_instrument > div {
+        min-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

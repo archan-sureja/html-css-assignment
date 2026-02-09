@@ -1,206 +1,293 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="index.css" />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="index.css">
-</head>
-
-<body>
-    <nav>
-        <div id="nav-container-1"> <!--image and search bar holder-->
-            <img src="assets/logo.jpg" style="height: 60px;">
-            <div>
-                <input type="text" placeholder="Search for products,brands and more">
-                <img src="assets/search.png" id="search-img">
-            </div>
-        </div>
-        <div id="nav-container-2"><!--login , more and cart container-->
-            <button id="login-button">Login</button>
-            <select id="more-option">
-                <option selected>More</option>
-                <option>Op1</option>
-            </select>
-            <div>
-                <img src="assets/cart.png" id="cart-img">
-                <button id="cart-button">cart</button>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <section name="categories">
-            <div id="category-container"> <!--flex-->
+    <body>
+        <nav>
+            <div id="nav-container-1">
+                <!--image and search bar holder-->
+                <img src="assets/logo.jpg" style="height: 60px" />
                 <div>
-                    <div style="width: 100px; height: 80px;"><img src="assets/soffer.png" alt="top offers"></div>
-                    <p>Top Offers</p>
-                </div>
-                <div>
-                    <div style="width: 100px; height: 80px;"><img src="assets/grocery.png" alt="grocery"></div>
-                    <p>Grocery</p>
-                </div>
-                <div>
-                    <div style="width: 100px; height: 80px;"><img src="assets/mobile.png" alt="mobile"></div>
-                    <p>Mobiles</p>
-                </div>
-                <div>
-                    <div style="width: 100px; height: 80px;"><img src="assets/fashion.png" alt="fashion"></div>
-                    <p>
-                        <select>
-                            <option selected>Fashion</option>
-                        </select>
-                    </p>
-                </div>
-                <div>
-                    <div style="width: 100px; height: 80px;"><img src="assets/electronics.png" alt="electronics"></div>
-                    <p> <select>
-                            <option selected>electronics</option>
-                        </select></p>
-                </div>
-                <div>
-                    <div style="width: 100px; height: 80px;"><img src="assets/home.png" alt="Home"></div>
-                    <p> <select>
-                            <option selected>Home</option>
-                        </select></p>
-                </div>
-                <div>
-                    <div style="width: 100px; height: 80px;"><img src="assets/appliances.png" alt="appliances"></div>
-                    <p> <select>
-                            <option selected>Appliances</option>
-                        </select></p>
-                </div>
-                <div>
-                    <div style="width: 100px; height: 80px;"><img src="assets/travel.jpeg" alt="travel"></div>
-                    <p>Travel</p>
-                </div>
-                <div style="width: auto;">
-                    <div style="width: 100px; height: 80px; justify-self: center;"><img src="assets/beauty.png" alt="beauty"></div>
-                    <p> 
-                        <select>
-                            <option selected>Beauty,Toys & More</option>
-                        </select>
-                    </p>
+                    <input
+                        type="text"
+                        placeholder="Search for products,brands and more"
+                    />
+                    <img src="assets/search.png" id="search-img" />
                 </div>
             </div>
-        </section>
-        <section style="background-color: rgb(238, 237, 237);">
-            <div id="product-container"> <!--grid-->
-                <div class="deals">
-                    <div class="header">
-                        <div style="margin-left: 5px;">
-                             <h5 style="display: inline;">Deals of the Day</h5> 
-                             <div style="display: flex;">
-                                 <img src="assets/timer.png" alt="">
-                                 <p style="color: rgb(136, 136, 136); font-size: small;">22 : 07 : 36 left</p>
-                             </div>
-                            
-                        </div>
-                        <button class="blue-button">view all</button>
-                    </div> <!--upper catalog title -->
-                    <hr>
-                    <div id="deals_of_day">
-                        <div>
-                            <div class="product-image"></div>
-                            <p>description</p>
-                            <p>description</p>
-                            <p>description </p>
-                        </div>
-                         <div>
-                            <div class="product-image"></div>
-                            <p>description</p>
-                            <p>description</p>
-                            <p>description </p>
-                        </div>
-                         <div>
-                            <div class="product-image"></div>
-                            <p>description</p>
-                            <p>description</p>
-                            <p>description </p>
-                        </div>
-                         <div>
-                            <div class="product-image"></div>
-                            <p>description</p>
-                            <p>description</p>
-                            <p>description </p>
-                        </div>
-                         <div>
-                            <div class="product-image"></div>
-                            <p>description</p>
-                            <p>description</p>
-                            <p>description </p>
-                        </div>
-                         <div>
-                            <div class="product-image"></div>
-                            <p>description</p>
-                            <p>description</p>
-                            <p>description </p>
-                        </div>
-                       
-                    </div> <!--upper catalog images-->
+            <div id="nav-container-2">
+                <!--login , more and cart container-->
+                <button id="login-button">Login</button>
+                <select id="more-option">
+                    <option selected>More</option>
+                    <option>Op1</option>
+                </select>
+                <div>
+                    <img src="assets/cart.png" id="cart-img" />
+                    <button id="cart-button">cart</button>
                 </div>
-                <div class="ads">
-                    <div style="height: 338px; box-sizing: border-box; z-index: 100;">
-                        <img src="assets/ad.png" alt="">
+            </div>
+        </nav>
+        <main>
+            <section name="categories">
+                <div id="category-container">
+                    <!--flex-->
+                    <div>
+                        <div style="width: 100px; height: 80px">
+                            <img src="assets/soffer.png" alt="top offers" />
+                        </div>
+                        <p>Top Offers</p>
                     </div>
-                </div> <!--ad image will be here-->
-                <div class="product">
-                    <div class="header">
-                        <div style="margin-left: 5px;">
-                             <h5>Book And music Instruments</h5>
-                             <p style="color: rgb(185, 185, 185); font-size: small;">Shop Now!</p>
+                    <div>
+                        <div style="width: 100px; height: 80px">
+                            <img src="assets/grocery.png" alt="grocery" />
                         </div>
-                        
-                        <button class="blue-button">view all</button>
-                    </div> <!--lower catalog title-->
-                    <hr style="color: rgb(192, 191, 191);">
-                    <div id="book_and_instrument">
-                        <div>
-                            <div class="product-image"></div>
-                            <p>description</p>
-                            <p>description</p>
-                            <p>description </p>
+                        <p>Grocery</p>
+                    </div>
+                    <div>
+                        <div style="width: 100px; height: 80px">
+                            <img src="assets/mobile.png" alt="mobile" />
                         </div>
-                         <div>
-                            <div class="product-image"></div>
-                            <p>description</p>
-                            <p>description</p>
-                            <p>description </p>
+                        <p>Mobiles</p>
+                    </div>
+                    <div>
+                        <div style="width: 100px; height: 80px">
+                            <img src="assets/fashion.png" alt="fashion" />
                         </div>
-                         <div>
-                            <div class="product-image"></div>
-                            <p>description</p>
-                            <p>description</p>
-                            <p>description </p>
+                        <p>
+                            <select>
+                                <option selected>Fashion</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div>
+                        <div style="width: 100px; height: 80px">
+                            <img
+                                src="assets/electronics.png"
+                                alt="electronics"
+                            />
                         </div>
-                         <div>
-                            <div class="product-image"></div>
-                            <p>description</p>
-                            <p>description</p>
-                            <p>description </p>
+                        <p>
+                            <select>
+                                <option selected>electronics</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div>
+                        <div style="width: 100px; height: 80px">
+                            <img src="assets/home.png" alt="Home" />
                         </div>
-                         <div>
-                            <div class="product-image"></div>
-                            <p>description</p>
-                            <p>description</p>
-                            <p>description </p>
+                        <p>
+                            <select>
+                                <option selected>Home</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div>
+                        <div style="width: 100px; height: 80px">
+                            <img src="assets/appliances.png" alt="appliances" />
                         </div>
-                         <div>
-                            <div class="product-image"></div>
-                            <p>description</p>
-                            <p>description</p>
-                            <p>description </p>
+                        <p>
+                            <select>
+                                <option selected>Appliances</option>
+                            </select>
+                        </p>
+                    </div>
+                    <div>
+                        <div style="width: 100px; height: 80px">
+                            <img src="assets/travel.jpeg" alt="travel" />
                         </div>
-                         <div>
-                            <div class="product-image"></div>
-                            <p>description</p>
-                            <p>description</p>
-                            <p>description </p>
+                        <p>Travel</p>
+                    </div>
+                    <div style="width: auto">
+                        <div
+                            style="
+                                width: 100px;
+                                height: 80px;
+                                justify-self: center;
+                            "
+                        >
+                            <img src="assets/beauty.png" alt="beauty" />
                         </div>
-                    </div> <!--lower catalog images-->
+                        <p>
+                            <select>
+                                <option selected>Beauty,Toys & More</option>
+                            </select>
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
-</body>
+            </section>
+            <section style="background-color: rgb(238, 237, 237)">
+                <div id="product-container">
+                    <!--grid-->
+                    <div class="deals">
+                        <div class="header">
+                            <div style="margin-left: 5px">
+                                <h5 style="display: inline">
+                                    Deals of the Day
+                                </h5>
+                                <div style="display: flex">
+                                    <img src="assets/timer.png" alt="" />
+                                    <p
+                                        style="
+                                            color: rgb(136, 136, 136);
+                                            font-size: small;
+                                        "
+                                    >
+                                        22 : 07 : 36 left
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="blue-button">view all</button>
+                        </div>
+                        <!--upper catalog title -->
+                        <hr />
+                        <div id="deals_of_day">
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                        </div>
+                        <!--upper catalog images-->
+                    </div>
+                    <div class="ads">
+                        <div
+                            style="
+                                height: 338px;
+                                box-sizing: border-box;
+                                z-index: 100;
+                            "
+                        >
+                            <img src="assets/ad.png" alt="" />
+                        </div>
+                    </div>
+                    <!--ad image will be here-->
+                    <div class="product">
+                        <div class="header">
+                            <div style="margin-left: 5px">
+                                <h5>Book And music Instruments</h5>
+                                <p
+                                    style="
+                                        color: rgb(185, 185, 185);
+                                        font-size: small;
+                                    "
+                                >
+                                    Shop Now!
+                                </p>
+                            </div>
 
+                            <button class="blue-button">view all</button>
+                        </div>
+                        <!--lower catalog title-->
+                        <hr style="color: rgb(192, 191, 191)" />
+                        <div id="book_and_instrument">
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                            <div>
+                                <div class="product-image"></div>
+                                <p>description</p>
+                                <p>description</p>
+                                <p>description</p>
+                            </div>
+                        </div>
+                        <!--lower catalog images-->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
